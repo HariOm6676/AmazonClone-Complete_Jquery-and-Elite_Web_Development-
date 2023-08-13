@@ -103,17 +103,79 @@
 span {
     font-size: 0.7rem;
 }
+
 .nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
 /***box 6**/
-.nav-cart i{
+.nav-cart i {
     font-size: 70px;
 }
 
 .nav-cart {
     font-size: 0.85rem;
     font-weight: 700;
+}
+
+/**panel**/
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panle-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/**hero section**/
+.hero-section {
+    background-image: url("images/hero_image.jpg");
+    background-size: cover;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-message a {
+    color: #007180;
+}
+.shop{
+    display: flex;
+    /* width: 20%; */
+    justify-content: space-evenly;
+}
+.box{
+    border: 2px solid black;
+    height: 100px;
+    width: 20%;
 }
