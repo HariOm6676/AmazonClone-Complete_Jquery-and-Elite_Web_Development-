@@ -1,0 +1,1 @@
+$( "input[name*='man']" ).val( "has man in it!" );
