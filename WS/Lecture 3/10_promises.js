@@ -1,1 +1,0 @@
-/* Promises: It is a java script object that link producing cade and consuming code.*/
