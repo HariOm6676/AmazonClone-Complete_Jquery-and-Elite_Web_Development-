@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery_Events</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    Enter your name:<input type="text" name="" value="">
+    <p>Enter your name. It will change background color on keydown and keyup</p>
+    <script>
+        $(document).ready(function(){
+            $("input").keydown(function(){
+                $("input").css("background-color","blue");
+            });
+
+        $("input").keyup(function(){
+            $("input").css("background-color","green");
+        });
+    });
+    </script>
+</body>
+</html>

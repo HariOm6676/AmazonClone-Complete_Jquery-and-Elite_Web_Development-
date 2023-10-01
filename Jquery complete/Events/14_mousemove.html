@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery_Events</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <p>Mouse is at coordinates:<span></span></p>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(event){
+                $("span").text(event.pageX+","+event.pageY);
+            })
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery_Events JQuery_Events</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <form>
+        <input class="target" type="text" value="Feild 1">
+        <select class="target">
+            <option value="option1" selected="selected">Option 1</option>
+            <option value="option2" > Option 2</option>
+
+        </select>
+    </form>
+    <div id="other">
+        Trigger the Handler
+    </div>
+    <script>
+        $(".target").on("change",function(){
+            alert("Handler for change called");
+        })
+    </script>
+</body>
+</html>
