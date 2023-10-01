@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery_Effects</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <button id="start" type="button" name="button" > Start </button>
+   <button id="stop" type="button" name="button" > Stop </button>
+   <div style="background: dodgerblue;height: 100px; width: 100px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#start").click(function(){
+            $("div").animate({height:300},1500);
+            $("div").animate({width:300},1500);
+            $("div").animate({height:100},1500);
+            $("div").animate({width:100},1500);
+        });
+        $("#stop").click(function(){
+            $("div").clearQueue();
+        });
+    });
+    </script>
+</body>
+</html>
