@@ -1,0 +1,1 @@
+exports.myDT=function(){return Date();} //export
